@@ -1,5 +1,4 @@
 from motor import Motor
-import time
 
 class Car():
     def __init__(self):
@@ -16,22 +15,18 @@ class Car():
     def carforward(self):
         self.lmotor.forward()
         self.rmotor.forward()
-        time.sleep(2)
 
     def carbackward(self):
         self.lmotor.backward()
         self.rmotor.backward()
-        time.sleep(2)
 
     def carleft(self):
         self.lmotor.stop()
         self.rmotor.forward()
-        time.sleep(2)
 
     def carright(self):
         self.rmotor.stop()
         self.lmotor.forward()
-        time.sleep(2)
 
     def stop(self):
         self.rmotor.stop()
